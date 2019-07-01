@@ -26,19 +26,19 @@ echo '2.4 создание разделов'
   echo;
   echo;
   echo;
-  echo +100M;
-
-  echo n;
-  echo;
-  echo;
-  echo;
-  echo +20G;
-
-  echo n;
-  echo;
-  echo;
-  echo;
   echo +1024M;
+
+  echo n;
+  echo;
+  echo;
+  echo;
+  echo +25G;
+
+  echo n;
+  echo;
+  echo;
+  echo;
+  echo +4G;
 
   echo n;
   echo p;
