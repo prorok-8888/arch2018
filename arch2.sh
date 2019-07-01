@@ -4,7 +4,7 @@ read -p "Введите имя пользователя: " username
 
 echo 'Прописываем имя компьютера'
 echo $hostname > /etc/hostname
-ln -svf /usr/share/zoneinfo/Asia/Yekaterinburg /etc/localtime
+ln -svf /usr/share/zoneinfo/Europe/Moscow /etc/localtime
 
 echo '3.4 Добавляем русскую локаль системы'
 echo "en_US.UTF-8 UTF-8" > /etc/locale.gen
@@ -31,8 +31,8 @@ grub-install /dev/sda
 echo 'Обновляем grub.cfg'
 grub-mkconfig -o /boot/grub/grub.cfg
 
-echo 'Ставим программу для Wi-fi'
-pacman -S dialog wpa_supplicant --noconfirm 
+#echo 'Ставим программу для Wi-fi'
+#pacman -S dialog wpa_supplicant --noconfirm 
 
 echo 'Добавляем пользователя'
 useradd -m -g users -G wheel -s /bin/bash $username
